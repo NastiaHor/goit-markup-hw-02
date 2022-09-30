@@ -1,0 +1,162 @@
+:root {
+    --color-logo-black: #000000;
+    --color-blue-main: #2196F3;
+    --color-black-main: #212121;
+    --color-grey-main: #757575;
+    --color-white-main: #ffffff;
+    --color-background-grey: #2F303A;
+    --color-blue-accent: #188CE8;
+    --color-grey-our-team: #F5F4FA;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-white-main);
+    color: var(--color-grey-main); 
+
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color: var(--color-blue-main);
+}
+
+.logo-part {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color: var(--color-logo-black);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.nav-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--color-black-main);
+}
+
+.nav-list:hover,
+.nav-list:focus {
+    color: var(--color-blue-main);
+}
+
+.current {
+    color: var(--color-blue-main);
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-blue-main);
+}
+
+.hero {
+    background-color: var(--color-background-grey);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-white-main);
+}
+
+.hero-btn {
+    font-family: inherit;
+    background: var(--color-blue-main);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+    color: var(--color-white-main);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: var(--color-blue-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor:pointer
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-black-main);
+}
+
+.benefits-p {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+
+.what-do-we-do-h{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-black-main);
+}
+
+.our-team {
+    background-color: var(--color-grey-our-team);
+}
+.our-team-h {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36)
+    color: var(var(--color-black-main))
+}

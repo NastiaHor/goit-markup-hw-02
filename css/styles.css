@@ -158,5 +158,5 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36)
-    color: var(var(--color-black-main))
+    color: var(--color-black-main)
 }

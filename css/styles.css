@@ -7,10 +7,12 @@
     --color-background-grey: #2F303A;
     --color-blue-accent: #188CE8;
     --color-grey-our-team: #F5F4FA;
+    --color-grey-address: rgba(255, 255, 255, 0.6);
 }
 
 body {
     font-family: "Roboto", sans-serif;
+    font-style: normal;
     background-color: var(--color-white-main);
     color: var(--color-grey-main); 
 
@@ -20,7 +22,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31/26);
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--color-blue-main);
 }
@@ -29,7 +31,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31/26);
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--color-logo-black);
 }
@@ -154,9 +156,60 @@ body {
 .our-team {
     background-color: var(--color-grey-our-team);
 }
-.our-team-h {
+.our-team-h2 {
     font-weight: 700;
     font-size: 36px;
-    line-height: calc(42 / 36)
-    color: var(--color-black-main)
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-black-main);
+}
+
+.our-team-box {
+    background: var(--color-white-main);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-black-main);
+}
+
+.our-team-p {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-grey-main);
+}
+
+.footer-box {
+    background-color: var(--color-background-grey);
+}
+
+.logo-part-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--color-white-main);
+    }
+
+.adress-inf {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--color-grey-address);
+}
+
+.address-accent {
+color: var(--color-white-main);
 }

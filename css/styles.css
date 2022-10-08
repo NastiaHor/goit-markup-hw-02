@@ -8,12 +8,65 @@
     --color-blue-accent: #188CE8;
     --color-grey-our-team: #F5F4FA;
     --color-grey-address: rgba(255, 255, 255, 0.6);
+    --color-grey-border: #ECECEC;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+    cursor: pointer;
+}
+address {
+    font-style: normal;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--color-white-main);
     color: var(--color-grey-main); 
+    /* outline: 2px solid tomato; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-grey-border);
+    /* outline: 2px solid tomato; */
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    outline: 2px solid tomato;
+}
+
+.nav-box {
+    display: inline;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.nav-contacts {
+    display: flex;
 }
 
 .logo {
@@ -23,6 +76,13 @@ body {
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--color-blue-main);
+}
+
+.logo:hover,
+.logo:focus,
+.logo-part:hover,
+.logo-part:focus {
+text-decoration: underline var(--color-blue-accent);
 }
 
 .logo-part {
@@ -48,6 +108,7 @@ body {
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: var(--color-black-main);
+    display: flex;
 }
 
 .nav-list:hover,
@@ -72,21 +133,35 @@ body {
     color: var(--color-blue-main);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .hero {
     background-color: var(--color-background-grey);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60/44);
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-white-main);
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 30px;
+    margin-left: 237px;
+    margin-right: 237px;
+    width: 696px;
 }
 
 .hero-btn {
+    display: inline-block;
     font-family: inherit;
     background: var(--color-blue-main);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -98,6 +173,10 @@ body {
     line-height: calc(30/16);
     text-align: center;
     letter-spacing: 0.06em;
+    /* margin-left: auto;
+    margin-right: auto; */
+    min-width: 216px;
+    padding: 10px 32px;
 }
 
 .hero-btn:hover,
@@ -105,7 +184,6 @@ body {
     background: var(--color-blue-accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    cursor:pointer
 }
 
 .visually-hidden {
@@ -194,7 +272,6 @@ body {
     }
 
 .adress-inf {
-    font-style: normal;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -229,7 +306,6 @@ color: var(--color-white-main);
     background-color: var(--color-blue-main);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    cursor: pointer;
 }
 
 .portfolio-filter-box {
